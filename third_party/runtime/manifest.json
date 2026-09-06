@@ -1,0 +1,38 @@
+{
+  "lineage": {
+    "capacity_adapter": {
+      "commit": "f3b8cc1ce6890a6de067fa1701df1123384c00e8",
+      "repository": "p0rc314in/capacity-independent-sdm-execution"
+    },
+    "integration": {
+      "repository": "p0rc314in/sparse-delta-memory",
+      "router_residualization_commit": "2ae3de07205e7049c3949ab0de7b76907ee8195c",
+      "runtime_commit": "61d29928aa7520f421e0bc39d02b4e5006ffd5a1"
+    },
+    "official_baseline": {
+      "commit": "183e7df809131b80ad4393741029d0f20fc3640b",
+      "repository": "facebookresearch/sparse-delta-memory"
+    }
+  },
+  "schema_version": 3,
+  "tree_hash_definition": "SHA-256 over sorted POSIX relative path, NUL byte, and file contents; manifest.json and __pycache__ excluded",
+  "upstream_to_vendored": {
+    "apps/main/generate.py": {
+      "official_baseline_sha256": "e04e4a6edaa0c1694fe61f0f9e9295012b81cccf7c93afc6ac109e01d208c9ca",
+      "vendored_sha256": "dfa9fd6eec1d793c71c9fae289b816335fd591bde1bca6c57740f2aead223b68"
+    },
+    "apps/main/transformer.py": {
+      "official_baseline_sha256": "69590e2dc0052dac8b960a67be2d7194833e4398ee4b4310f92e7dad40a8e4c3",
+      "vendored_sha256": "05e1f725e4ff9834ceddf742d96a51525f34f111f21e529f2bf4eedec5855425"
+    },
+    "lingua/sparse_delta_memory/layer.py": {
+      "official_baseline_sha256": "0b14fbc760423e3c39e810a8e583681f1e819d33f683c220433563337cb55da6",
+      "vendored_sha256": "dcfd34eda932bf8e2b3f0eefb6f10bed13821158a003d9873fc54f5bf94625b8"
+    },
+    "lingua/sparse_delta_memory/memory_ops.py": {
+      "official_baseline_sha256": "b4885bdb9d0c8fd72c730c8ffbfa1c37a25c3717c226eb3900787302f00f4468",
+      "vendored_sha256": "725cc8f64b330f73be03c6ae9d61ea1a6e096e614170e7bc8a49886edf418aa9"
+    }
+  },
+  "vendored_tree_sha256": "4271a8911cedb53a7a1de790a44f56d3ad1d1b20cfe4fb4b542e61cdd0a991c7"
+}

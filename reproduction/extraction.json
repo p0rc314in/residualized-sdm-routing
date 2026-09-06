@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "source_repository": "scratch/elastic-sdm-research",
+      "source_commit": "82182637aa28a3a46ab1bbac5ef5f494c5f927fe",
+      "source_path": "benchmarks/prepare_recall_suite.py",
+      "source_sha256": "845d663ef1f8ab3592569fd95142ac4e3b205779a25affe09a832428e649ae0c",
+      "destination": "reproduction/recall_generate.py"
+    },
+    {
+      "source_repository": "scratch/higher-dimensional-sdm-attention-topology-controls",
+      "source_commit": "975bd74bce5804c54d710a968ba3c4ae4bd753f7",
+      "source_path": "benchmarks/quality_data.py",
+      "source_sha256": "4d0bcbe3f9560204f31cd08a6760aa21bbc637ab060aea237e93f3567ba0c4df",
+      "destination": "reproduction/recall_data.py"
+    },
+    {
+      "source_repository": "scratch/higher-dimensional-sdm-attention-topology-controls",
+      "source_commit": "975bd74bce5804c54d710a968ba3c4ae4bd753f7",
+      "source_path": "benchmarks/recall_task.py",
+      "source_sha256": "876e741d258c2fc03a1c8b0fa61c41c397b44d3f301650b0c05f3634e554486d",
+      "destination": "reproduction/recall_model.py"
+    },
+    {
+      "source_repository": "scratch/sdm-shared-router-babylm",
+      "source_commit": "ab7c16278d95650f494e0ab8d05a4024aec93504",
+      "source_path": "babylm_shared_router/__init__.py",
+      "source_sha256": "407b45542f0ee9540bfc13d0ffd81c1e2335e7700c54f6c0d05195f3e311cd2b",
+      "destination": "reproduction/babylm/__init__.py"
+    },
+    {
+      "source_repository": "scratch/sdm-shared-router-babylm",
+      "source_commit": "ab7c16278d95650f494e0ab8d05a4024aec93504",
+      "source_path": "babylm_shared_router/spec.py",
+      "source_sha256": "f539aa48cff686dcc9ab8c84a40908403ea84801d9bad13d722835e6c1c505de",
+      "destination": "reproduction/babylm/spec.py"
+    },
+    {
+      "source_repository": "scratch/sdm-shared-router-babylm",
+      "source_commit": "ab7c16278d95650f494e0ab8d05a4024aec93504",
+      "source_path": "babylm_shared_router/model.py",
+      "source_sha256": "f968b5e15d191f800be4f5ee774b04557de364443e587292b5f49999d49494e2",
+      "destination": "reproduction/babylm/model.py"
+    },
+    {
+      "source_repository": "scratch/sdm-shared-router-babylm",
+      "source_commit": "ab7c16278d95650f494e0ab8d05a4024aec93504",
+      "source_path": "babylm_shared_router/data.py",
+      "source_sha256": "1d6be815f4ab3dfe4f9eaa61daa55873497effec8d59387df825e25842a24a23",
+      "destination": "reproduction/babylm/data.py"
+    },
+    {
+      "source_repository": "scratch/sdm-shared-router-babylm",
+      "source_commit": "ab7c16278d95650f494e0ab8d05a4024aec93504",
+      "source_path": "babylm_shared_router/io.py",
+      "source_sha256": "315d3fea0fe19b148f261180ac1c4e3deeae719da7c11d56c9eb265243a19bbd",
+      "destination": "reproduction/babylm/io.py"
+    },
+    {
+      "source_repository": "scratch/sdm-shared-router-babylm",
+      "source_commit": "ab7c16278d95650f494e0ab8d05a4024aec93504",
+      "source_path": "babylm_shared_router/train.py",
+      "source_sha256": "4f252aa019096b1f923d5ae20828af05a20cbd85d8077ec813a32f5b0b2aede9",
+      "destination": "reproduction/babylm/train.py"
+    },
+    {
+      "source_repository": "scratch/sdm-shared-router-babylm",
+      "source_commit": "ab7c16278d95650f494e0ab8d05a4024aec93504",
+      "source_path": "babylm_shared_router/evaluate.py",
+      "source_sha256": "569ffbeea5ee78fc7426a775e0369b5aa1465af6e92993a228b2c25678ed7a58",
+      "destination": "reproduction/babylm/evaluate.py"
+    },
+    {
+      "source_repository": "scratch/sdm-shared-router-babylm",
+      "source_commit": "ab7c16278d95650f494e0ab8d05a4024aec93504",
+      "source_path": "babylm_shared_router/evaluate_checkpoints.py",
+      "source_sha256": "5ec8804146e236856d9be75aef6f1c4bdfa62095c8e9ba0f8eefdfa4524653d1",
+      "destination": "reproduction/babylm/evaluate_checkpoints.py"
+    },
+    {
+      "source_repository": "scratch/sdm-shared-router-babylm",
+      "source_commit": "ab7c16278d95650f494e0ab8d05a4024aec93504",
+      "source_path": "babylm_shared_router/ewok.py",
+      "source_sha256": "6a60b553bfc2395325ace2700d118c4c92eb6428260a5c2671b89a3882e08f86",
+      "destination": "reproduction/babylm/ewok.py"
+    },
+    {
+      "source_repository": "scratch/sdm-shared-router-babylm",
+      "source_commit": "ab7c16278d95650f494e0ab8d05a4024aec93504",
+      "source_path": "babylm_shared_router/evaluate_full_ewok.py",
+      "source_sha256": "6b7b126e032a643b73c091b8bdbf5e63d20e1b6a94ac8ef1c61360fd81a0abb7",
+      "destination": "reproduction/babylm/evaluate_full_ewok.py"
+    },
+    {
+      "source_repository": "scratch/sdm-shared-router-babylm",
+      "source_commit": "ab7c16278d95650f494e0ab8d05a4024aec93504",
+      "source_path": "scripts/prepare_checkpoint_evaluation.py",
+      "source_sha256": "497be29388c34a06e74b4ff829cb478c2c7dbc2344ff10d1809fb29efa5b75ae",
+      "destination": "reproduction/babylm/prepare_checkpoint_evaluation.py"
+    },
+    {
+      "source_repository": "scratch/sdm-shared-router-babylm",
+      "source_commit": "ab7c16278d95650f494e0ab8d05a4024aec93504",
+      "source_path": "scripts/prepare_full_ewok.py",
+      "source_sha256": "0402d1765ed9b5a5a45c04d49e4a936118a825919f0858f976bd0710c78efe9d",
+      "destination": "reproduction/babylm/prepare_full_ewok.py"
+    },
+    {
+      "source_repository": "scratch/sdm-shared-router-babylm",
+      "source_commit": "ab7c16278d95650f494e0ab8d05a4024aec93504",
+      "source_path": "scripts/score_human_likeness.py",
+      "source_sha256": "ac90361e66643176c7660fdb9350cc4e13f650d5e6e3cfd40df93a3a257a7fa1",
+      "destination": "reproduction/babylm/score_human_likeness.py"
+    },
+    {
+      "source_repository": "scratch/causal-overwrite-bus",
+      "source_commit": "e5cdf6c81f9cf68746c1c89917e79ced8b815a4e",
+      "source_path": "benchmarks/prepare_babylm2026.py",
+      "source_sha256": "04f047b4063f3c62e78ffed68bc5a5e185f92b58c2a9677b3da57c70416f81ea",
+      "destination": "reproduction/babylm/pack_evaluation.py"
+    },
+    {
+      "source_repository": "scratch/sdm-shared-router-babylm",
+      "source_path": "data/babylm2026-strict-gpt2-causal-t2048-10epoch-v1/manifest.json",
+      "source_sha256": "b8d15c06233c99769a1bd5e7164c22f0ca55cd39d1a943d63e61dfd1ddda84e2",
+      "destination": "data/babylm-input-manifest.json"
+    },
+    {
+      "source_repository": "scratch/sdm-shared-router-babylm",
+      "source_path": "data/babylm2026-strict-gpt2-causal-t2048-10epoch-v1/legacy_packed_manifest.json",
+      "source_sha256": "08bf2d70c2f6c318f0ecedd661504b621bce4de329daec4ca075443c47a22bdf",
+      "destination": "data/babylm-evaluation-records.json",
+      "selection": [
+        "tokenizer",
+        "zero_shot",
+        "finetune"
+      ]
+    },
+    {
+      "source_repository": "scratch/sdm-shared-router-babylm",
+      "source_path": "data/full-ewok-a/manifest.json",
+      "source_sha256": "31dbb04d1a77c185eca901617931d375ae5474c9375e806d18aefd0e45ef847e",
+      "destination": "data/babylm-ewok-records.json",
+      "selection": [
+        "format",
+        "dataset",
+        "dataset_revision",
+        "official_evaluator_revision",
+        "vocab_sha256",
+        "tokenizer",
+        "tasks",
+        "subdomains",
+        "examples",
+        "candidates",
+        "gpt2_tokens",
+        "records"
+      ]
+    }
+  ]
+}

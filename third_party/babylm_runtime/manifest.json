@@ -1,0 +1,29 @@
+{
+  "files": {
+    "LICENSE": "3711f963c05d0be80d53e5923308a6dee31b203da23435c9cfb7c7b6e4dd5e19",
+    "LICENSE-LINGUA": "86c341b36966e26cd7be9281daffa95e1279ec12662ee5319e9ace320e9db74b",
+    "apps/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "apps/main/__init__.py": "abe836cd309d15d814afb3cf18e6eb7abd0726ea6ecc3091335bb82d7236c379",
+    "apps/main/transformer.py": "1d2a6a138125ef2d74030932c89b1f75658f5f9350f99e34e2d6278f6f00b67a",
+    "lingua/__init__.py": "abe836cd309d15d814afb3cf18e6eb7abd0726ea6ecc3091335bb82d7236c379",
+    "lingua/probe.py": "6c34ae7ea2ee0c69eab0ce59f221ef57bbcddf3addd45a6c9786c4837b4b8e37",
+    "lingua/sparse_delta_memory/__init__.py": "376171f7553a68a9a2ff403e6c305ff2352e8192a8cdd125145ba7156457fa50",
+    "lingua/sparse_delta_memory/cache.py": "3f5b70d02db7b124ce33520125f0ddf879406a9885de9bd54444764884dd592e",
+    "lingua/sparse_delta_memory/compact.py": "b118949ffb21d096dd1c44a46e20473f4c4c010f58f323f836e89ba5cbed7bbd",
+    "lingua/sparse_delta_memory/cuda/__init__.py": "abe836cd309d15d814afb3cf18e6eb7abd0726ea6ecc3091335bb82d7236c379",
+    "lingua/sparse_delta_memory/cuda/scatter_write_cuda.py": "e5aa6a4608b355a102c884883a94941d400dff86fdba5edf24cabdafe663821d",
+    "lingua/sparse_delta_memory/cuda/sparse_ip_cuda.py": "d46943e562b3f9e9fb5bc022d0466693cf443a7e8ce49e74df56e4b5110b4e5d",
+    "lingua/sparse_delta_memory/cuda/warp_coop_gather_async_cuda.py": "3dd030250b9cb5fa9e188ad3aa38901701cb690c37e1a2798a599f24c141c14d",
+    "lingua/sparse_delta_memory/cuda/warp_cooperative_gather_cuda.py": "a81be4bf8e90c66f40a328ba4ac2aaa861be7b3f179f4d5a1767310c427fb927",
+    "lingua/sparse_delta_memory/initial_memory.py": "4197b5f28271d38cf5bf63d3dd22bd08dd821f273d7839903cee7c41f7c9ddbd",
+    "lingua/sparse_delta_memory/layer.py": "d5c85e5389fb2c8e180241f84a1a9a8432c44d2e018a29c46f35b63576262027",
+    "lingua/sparse_delta_memory/memory_ops.py": "c6b39bc9cf192c593d12363c9a1e7a5a3041888bf2d7419d8eeacabbad4da2f6",
+    "lingua/sparse_delta_memory/memory_stats.py": "c1b1930dc9394133199519d70d79b6461c0553d53e120c9c6b195dc203bcb4c6",
+    "lingua/sparse_delta_memory/routing.py": "712dc68b32bf52ee58ffb7c5a608318311c1d49966634e77135e0eb8940cff79",
+    "lingua/sparse_delta_memory/triton_argsort.py": "4855cf50a243a722e47df0eede0f71971c8610d9a093b00d9e2c65d4fede09cc",
+    "lingua/transformer.py": "cf7995db717e8a4794b8dad9527eb3ff815bd3f00b4509f456d7bb9d6da828f8"
+  },
+  "repository": "p0rc314in/sparse-delta-memory",
+  "revision": "61d29928aa7520f421e0bc39d02b4e5006ffd5a1",
+  "schema_version": 1
+}

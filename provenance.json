@@ -1,0 +1,206 @@
+{
+  "schema_version": 4,
+  "implementation": {
+    "upstream_repository": "https://github.com/facebookresearch/sparse-delta-memory",
+    "official_baseline_revision": "183e7df809131b80ad4393741029d0f20fc3640b",
+    "router_residualization_repository": "p0rc314in/sparse-delta-memory",
+    "router_residualization_revision": "2ae3de07205e7049c3949ab0de7b76907ee8195c",
+    "scale_experiment_repository": "p0rc314in/sparse-delta-memory",
+    "scale_experiment_revision": "61d29928aa7520f421e0bc39d02b4e5006ffd5a1",
+    "vendored_runtime_manifest": "third_party/runtime/manifest.json"
+  },
+  "wikitext103": {
+    "source": "Salesforce/wikitext",
+    "revision": "5fddba447aa4e75996922ea0d6b18b42f0a81cc4",
+    "protocol_id": "wikitext103-gpt2-causal-t2048-coverage-v1",
+    "manifest_sha256": "fc4ef13cbc38070f2d7774dffbfd5be48cab31fe45d6d9995d522fc3bac1dde6",
+    "payload_sha256": "f430ce52a43a44b88f5a8ec1ec5882866daaa568595bfbd6b765e3369586f85e",
+    "released_training_curves": {
+      "path": "data/wikitext-training-curves.csv",
+      "sha256": "f95fca446e3b531c04e560b342d0d954fafea04527e522c1524d130ac4a9f1e0",
+      "metric": "train_nll",
+      "aggregation": "none",
+      "figure_aggregation": "trailing_1000_step_mean_from_step_2000_sampled_every_1000_steps_and_terminal",
+      "optimizer_steps_per_arm": 21603,
+      "source_artifacts": {
+        "dense_attention": {
+          "source_repository": "scratch/higher-dimensional-sdm-attention-topology-controls",
+          "source_commit": "975bd74bce5804c54d710a968ba3c4ae4bd753f7",
+          "artifact": "results/m5-sdm-attention-topology-wikitext103-seed0-v1/a8_dense/extracted/artifacts/training_curve.jsonl",
+          "sha256": "560812a44518bcbdb40bc4fc447d5dbb44774d655a152141e3340b28ffdc9a9d"
+        },
+        "b7a1_native_sdm": {
+          "source_repository": "scratch/.worktrees/p2-headline-topology-matrix-v1",
+          "source_commit": "2711837ce554158f14a4737bce4ac065ba4d1068",
+          "artifact": "results/m5-p2-headline-topology-b7a1-wikitext103-seed0-v1/b7a1_p2_c32_r8_w8_fixed_native.result.json",
+          "sha256": "a4f31d67c34e67b025fc8265ab3899eec21e1777e3d6c8f79c4d113a19b1f3c1"
+        },
+        "b7a1_residualized_sdm": {
+          "source_repository": "scratch/.worktrees/p2-headline-topology-matrix-v1",
+          "source_commit": "2711837ce554158f14a4737bce4ac065ba4d1068",
+          "artifact": "results/m5-p2-headline-topology-b7a1-wikitext103-seed0-v1/b7a1_p2_c32_r8_w8_fixed_shared.result.json",
+          "sha256": "4f965d03e1aab8f04219121e1011a9ea94ba0769c5e53edf98ce34a53e396276"
+        },
+        "b8_native_sdm": {
+          "source_repository": "scratch/.worktrees/topk-p2-paper-overlap-wikitext",
+          "source_commit": "d1fcbec72cd634b85539efe960d3dc51df6aab64",
+          "artifact": "results/m5-p2-paper-overlap-access-curriculum-depth8-wikitext103-seed0-v1/p2_c32_k8_fixed_native.result.json",
+          "sha256": "f5c739353b5430faa0bbca63c646b080c0929efc09a84847d01be4f735f1d938"
+        },
+        "b8_residualized_sdm": {
+          "source_repository": "scratch/sdm-paper-sparsity-access-curriculum",
+          "source_commit": "5312acac2f2edf33e81eb639130c737e9fdf614f",
+          "artifact": "results/m5-p2-shared-bootstrap-geometry-depth8-wikitext103-seed0-v1/p2_c32_r8_w8_fixed_shared.result.json",
+          "sha256": "39774c0b2be5df5c6ce4ccd1af76771ff9a1c28120bd76ff2150193718e7ee36"
+        }
+      }
+    }
+  },
+  "adaptive_recall": {
+    "protocol_id": "adaptive-recall-seed102337-v1",
+    "stream_seed": 102337,
+    "manifest_sha256": "b0587d62c3ab709c94e37742892451a39463a7d577212b9379bd76d966f97800",
+    "training_steps": 30000,
+    "evaluation_examples_per_condition": 2048
+  },
+  "wikitext103_results": {
+    "dense_attention": {
+      "source_repository": "scratch/higher-dimensional-sdm-attention-topology-controls",
+      "source_commit": "975bd74bce5804c54d710a968ba3c4ae4bd753f7",
+      "artifact": "results/m5-sdm-attention-topology-wikitext103-seed0-v1/a8_dense/extracted/artifacts/result.json",
+      "result_sha256": "02b53fd7550ee3c9d73d5fca64284e405c07b578555723ad61d7e79d87e38a11"
+    },
+    "b7a1_native_sdm": {
+      "source_repository": "scratch/.worktrees/p2-headline-topology-matrix-v1",
+      "source_commit": "2711837ce554158f14a4737bce4ac065ba4d1068",
+      "artifact": "results/m5-p2-headline-topology-b7a1-wikitext103-seed0-v1/b7a1_p2_c32_r8_w8_fixed_native.result.json",
+      "result_sha256": "a4f31d67c34e67b025fc8265ab3899eec21e1777e3d6c8f79c4d113a19b1f3c1"
+    },
+    "b8_native_sdm": {
+      "source_repository": "scratch/.worktrees/topk-p2-paper-overlap-wikitext",
+      "source_commit": "d1fcbec72cd634b85539efe960d3dc51df6aab64",
+      "artifact": "results/m5-p2-paper-overlap-access-curriculum-depth8-wikitext103-seed0-v1/p2_c32_k8_fixed_native.result.json",
+      "result_sha256": "f5c739353b5430faa0bbca63c646b080c0929efc09a84847d01be4f735f1d938"
+    },
+    "b7a1_residualized_sdm": {
+      "source_repository": "scratch/.worktrees/p2-headline-topology-matrix-v1",
+      "source_commit": "2711837ce554158f14a4737bce4ac065ba4d1068",
+      "artifact": "results/m5-p2-headline-topology-b7a1-wikitext103-seed0-v1/b7a1_p2_c32_r8_w8_fixed_shared.result.json",
+      "result_sha256": "4f965d03e1aab8f04219121e1011a9ea94ba0769c5e53edf98ce34a53e396276"
+    },
+    "b8_residualized_sdm": {
+      "source_repository": "scratch/sdm-paper-sparsity-access-curriculum",
+      "source_commit": "5312acac2f2edf33e81eb639130c737e9fdf614f",
+      "artifact": "results/m5-p2-shared-bootstrap-geometry-depth8-wikitext103-seed0-v1/p2_c32_r8_w8_fixed_shared.result.json",
+      "result_sha256": "39774c0b2be5df5c6ce4ccd1af76771ff9a1c28120bd76ff2150193718e7ee36"
+    }
+  },
+  "adaptive_recall_results": {
+    "dense_attention": {
+      "source_repository": "scratch/higher-dimensional-sdm-attention-topology-controls",
+      "source_commit": "975bd74bce5804c54d710a968ba3c4ae4bd753f7",
+      "artifact": "results/m5-sdm-attention-topology-recall-seed0-v1/a8_dense/extracted/artifacts/result.json",
+      "result_sha256": "33cdb3f265fde4bf7425a3e98d815153498c6aa306670487fe2e7a73fa8bfb75"
+    },
+    "b7a1_native_sdm": {
+      "source_repository": "scratch/.worktrees/p2-headline-topology-matrix-v1",
+      "source_commit": "2711837ce554158f14a4737bce4ac065ba4d1068",
+      "artifact": "results/m5-p2-headline-topology-b7a1-recall-seed0-v1/b7a1_p2_c32_r8_w8_fixed_native/result.compact.json",
+      "result_sha256": "69cef9d876b1e6ad5ad7a4355aac9d48600a2d112f71a0dc51a8b4f0a9f72d04"
+    },
+    "b8_native_sdm": {
+      "source_repository": "scratch/.worktrees/p2-headline-recall-controls-v1",
+      "source_commit": "2639f77e34d450077079c9d1cab1a4ef8d7ec4c9",
+      "artifact": "results/m5-p2-native-fixed-k8-depth8-recall-seed0-v1/p2_c32_r8_w8_fixed_native/result.compact.json",
+      "result_sha256": "34b71fd2a30d68f86f8323911076da2823f0bc963b639c391a0ad91686e6cccc"
+    },
+    "b7a1_residualized_sdm": {
+      "source_repository": "scratch/.worktrees/p2-headline-topology-matrix-v1",
+      "source_commit": "2711837ce554158f14a4737bce4ac065ba4d1068",
+      "artifact": "results/m5-p2-headline-topology-b7a1-recall-seed0-v1/b7a1_p2_c32_r8_w8_fixed_shared/result.compact.json",
+      "result_sha256": "40d43a4220e05b3d9a96e8398fc44ce7641e00199ad6118bbd1011b4f21fae22"
+    },
+    "b8_residualized_sdm": {
+      "source_repository": "scratch/.worktrees/p2-curriculum-recall-basis-v1",
+      "source_commit": "c6ef6e0da27ac9edcce1e6a5128f48f89a99971f",
+      "artifact": "results/m5-p2-shared-curriculum-basis-depth8-recall-seed0-v1/p2_c32_r8_w8_fixed_shared/result.compact.json",
+      "result_sha256": "ab96f462c3ebe8a6ac69d97902b9c835109df1b472ad04c0c6bcfefc90596da9"
+    }
+  },
+  "babylm": {
+    "source_repository": "scratch/sdm-shared-router-babylm",
+    "source_commit": "ab7c16278d95650f494e0ab8d05a4024aec93504",
+    "training_implementation_revision": "61d29928aa7520f421e0bc39d02b4e5006ffd5a1",
+    "campaign_id": "sdm-shared-router-babylm2026-strict-seed0-v1",
+    "protocol_id": "babylm2026-strict-gpt2-causal-t2048-10epoch-v1",
+    "status": "complete",
+    "training_corpus": {
+      "dataset": "BabyLM-community/BabyLM-2026-Strict",
+      "revision": "9e57baaaa91ac3c638746be14d1d5fa6c789f4cf",
+      "manifest_sha256": "b8d15c06233c99769a1bd5e7164c22f0ca55cd39d1a943d63e61dfd1ddda84e2"
+    },
+    "evaluation_data": {
+      "dataset": "BabyLM-community/BabyLM-2026-Strict-Evals",
+      "revision": "8d52da9424a9ff30b9e8266c4f751aba9c504233"
+    },
+    "terminal_checkpoints": {
+      "dense": "ecbbd18116d556317819e41b178068ac57af88e4d9e94f69d9f6bf4118b5b84b",
+      "native_sdm": "79323fedba58fdf9332f10f839aed3485f19a74300bbe3a0121c3fae4b19a6b9",
+      "residualized_sdm": "e76a7260ff3aced03489030e2096c93dc801928765629ffc0d2907f1c78df736"
+    },
+    "official_evaluator_revision": "6f825c291e2c4c78ad33b1935fd64d45f52642dc",
+    "optimized_sdm_inference_revision": "3a2007609e301451420c537075bdbf12bba83d5a",
+    "full_ewok": {
+      "dataset": "ewok-core/ewok-core-1.0",
+      "dataset_revision": "34d912a608066c92e2990a0328ffc3bd9a716042",
+      "replaces_terminal_subset": "ewok_fast"
+    },
+    "complete_evaluation": {
+      "source_artifact": "results/artifacts/9ebb4a9213f3784eb0dc20378f7bcb3ccd1299424ae9f82de9594e5a19fe7ee4.tar.gz",
+      "artifact_sha256": "9ebb4a9213f3784eb0dc20378f7bcb3ccd1299424ae9f82de9594e5a19fe7ee4",
+      "contains_gated_ewok_inputs": true,
+      "redistributed": false,
+      "terminal_result_sha256": {
+        "dense": "80b69286bb0478395b3bc7f7dcb608fe7e7acaaaf177af02aff5b2022398361e",
+        "native_sdm": "e303082d032e9f3e7ce4e645c5cffc37528532f4e9a643d4f8e883b133877e6a",
+        "residualized_sdm": "bfd6286876301f26823f8a9cb918a9cf7e84f61326ff45102fd4d300de047acc"
+      }
+    },
+    "checkpoint_inference_validation": {
+      "reference": "exact_training_recurrence",
+      "examples": 2048,
+      "candidates": 4096,
+      "max_abs_score_delta": 0.0,
+      "prediction_matches": 2048
+    },
+    "checkpoint_evaluation": {
+      "status": "complete",
+      "checkpoint_count_per_arm": 28,
+      "source_artifact": "results/artifacts/6b68b1c3ba5207d71a8b47603e3499d610ec8c2c565a9fe2e3ead8ac2502cdbf.tar",
+      "artifact_sha256": "6b68b1c3ba5207d71a8b47603e3499d610ec8c2c565a9fe2e3ead8ac2502cdbf",
+      "result_sha256": {
+        "dense": "ad9ac29d136a99246b4494e37e1144e5b08828ca19d09b5fd550ec1c713bbf83",
+        "native_sdm": "986bebeb3c32373b46b2fbeb4969d46591592d948a216d08545c6247b1a1f224",
+        "residualized_sdm": "cd61c90bd6601f6d18230991929cb61c8bf2574ce136fde23b5814331c7fcfbc"
+      }
+    }
+  },
+  "figures": {
+    "wikitext_training": {
+      "path": "figures/wikitext-training.png",
+      "sha256": "e7b406304448bfcc3ef6db92f10dff39ae93b407e67ab9dfb1f58c992a210682"
+    },
+    "babylm_training": {
+      "path": "figures/babylm-training.png",
+      "sha256": "5c907f457a9bc8c3b57c34b688cd7ab36f05cb07eb9fa32b708b947abb41c692"
+    },
+    "babylm_evaluation": {
+      "path": "figures/babylm-evaluation.png",
+      "sha256": "bfe8e52a1fee2a44c6ba4a4fa487fef2947396f68822b449d1939d04c6c2c4f2"
+    },
+    "social_preview": {
+      "path": "figures/social-preview.png",
+      "sha256": "eb700023095f206ebeee36711a77f6675af24fd81b666c5d1f26d7b7dce419c8"
+    }
+  }
+}

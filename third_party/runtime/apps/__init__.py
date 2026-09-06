@@ -1,0 +1,1 @@
+"""Pinned released application sources."""

@@ -1,0 +1,79 @@
+{
+  "schema_version": 4,
+  "model_identity": {
+    "family": "sparse_delta_memory",
+    "upstream_repository": "https://github.com/facebookresearch/sparse-delta-memory",
+    "router_comparison": [
+      "independent_read_write",
+      "residualized_read_write"
+    ],
+    "addressing": "two_factor_product_key",
+    "initial_memory": "product_key",
+    "mutation": "gated_delta",
+    "read_order": "read_after_write"
+  },
+  "small_experiment": {
+    "protocols": [
+      "wikitext103-gpt2-causal-t2048-coverage-v1",
+      "adaptive-recall-seed102337-v1"
+    ],
+    "arms": [
+      "a8_dense_attention",
+      "b7a1_native_sdm",
+      "b8_native_sdm",
+      "b7a1_residualized_sdm",
+      "b8_residualized_sdm"
+    ],
+    "width": 128,
+    "layers": 8,
+    "memory_heads": 1,
+    "rows_per_head": 1024,
+    "reads": 8,
+    "writes": 8,
+    "seed": 0
+  },
+  "reproduction": {
+    "wikitext103": {
+      "status": "implemented",
+      "end_to_end_validation": "not_run",
+      "sparse_cuda_validation": "not_run"
+    },
+    "adaptive_recall": {
+      "status": "implemented",
+      "end_to_end_validation": "not_run",
+      "sparse_cuda_validation": "not_run"
+    },
+    "babylm": {
+      "status": "implemented",
+      "end_to_end_validation": "not_run",
+      "sparse_cuda_validation": "not_run"
+    }
+  },
+  "scale_experiment": {
+    "protocol": "babylm2026-strict-gpt2-causal-t2048-10epoch-v1",
+    "comparison_arms": [
+      "a16_dense_attention",
+      "b16_native_sdm",
+      "b16_residualized_sdm"
+    ],
+    "width": 512,
+    "layers": 16,
+    "memory_heads": 1,
+    "rows_per_head": 16384,
+    "reads": 32,
+    "writes": 32,
+    "seed": 0,
+    "training_status": "complete",
+    "terminal_evaluation_status": "complete",
+    "checkpoint_inference_status": "complete",
+    "human_likeness_aggregation_status": "complete"
+  },
+  "reproduction_validation_policy": {
+    "mode": "bounded_implementation_checks",
+    "full_experiment_rerun_required": false,
+    "checkpoint_distribution_required": false,
+    "full_experiment_rerun_status": "not_run",
+    "scientific_evidence": "recorded_completed_experiments",
+    "additional_experiments": "require_a_scientific_question_and_explicit_authorization"
+  }
+}

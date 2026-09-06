@@ -1,0 +1,8 @@
+.DS_Store
+.venv/
+__pycache__/
+*.egg-info/
+*.py[cod]
+.pytest_cache/
+runs/*
+!runs/.gitkeep

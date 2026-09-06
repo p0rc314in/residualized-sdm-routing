@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "residualized-sdm-routing"
+version = "0.1.0"
+description = "Residualized read/write routing for Sparse Delta Memory"
+requires-python = ">=3.12,<3.14"
+license-files = [
+  "LICENSE",
+  "THIRD_PARTY.md",
+  "third_party/runtime/LICENSE",
+  "third_party/runtime/LICENSE-LINGUA",
+  "third_party/babylm_runtime/LICENSE",
+  "third_party/babylm_runtime/LICENSE-LINGUA",
+]
+dependencies = [
+  "einops==0.8.2",
+  "huggingface-hub==1.27.0",
+  "ninja==1.13.0",
+  "numpy==2.5.2",
+  "pyarrow==25.0.1",
+  "tiktoken==0.14.0",
+  "torch==2.11.0",
+  "triton==3.6.0; sys_platform == 'linux' and platform_machine == 'x86_64'",
+]
+
+[project.optional-dependencies]
+babylm-eval = [
+    "datasets==5.0.1",
+    "nltk==3.10.3",
+    "pandas==3.0.5",
+    "scipy==1.18.1",
+    "statsmodels==0.15.0",
+    "transformers==5.16.1",
+]
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
+
+[tool.uv.sources]
+torch = [
+  { index = "pytorch-cu128", marker = "sys_platform == 'linux' and platform_machine == 'x86_64'" },
+]
+
+[tool.setuptools.packages.find]
+where = [".", "third_party/runtime"]
+include = [
+  "apps*",
+  "capacity_independent_sdm*",
+  "lingua*",
+  "reproduction*",
+  "shared_residual_routing*",
+]
